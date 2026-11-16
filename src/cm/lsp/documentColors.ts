@@ -213,7 +213,7 @@ function applyTextEdits(
 		if (!mapped) continue;
 		const insert =
 			typeof edit.newText === "string"
-				? edit.newText.replaceAll('\r\n', '\n')
+				? edit.newText.replaceAll("\r\n", "\n")
 				: "";
 		changes.push({ from: mapped.from, to: mapped.to, insert });
 	}
